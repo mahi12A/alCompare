@@ -1,0 +1,62 @@
+package arn;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+
+public class Copy {
+
+	public static void main(String[] args) {
+		List<String> a = new ArrayList<String>();
+		List<String> b = new ArrayList<String>();
+		a.add("mahi");
+		a.add("sunny");
+		//a.add("ayush");
+		a.add("ayush1");
+		a.add("ayush2");
+		a.add("ayush");
+		a.add("ayush4");
+		
+		b.add("mahi");
+		b.add("sunny");
+		//b.add("ayush");
+		b.add("ayush1");
+		b.add("ayush2");
+		b.add("mahi");
+		b.add("mahi");
+		
+		List<String> c = new ArrayList<String>();
+		for(String s : a)
+		{
+			if(b.contains(s))
+			{
+				c.add("yes");
+				System.out.println(c);
+				
+			}
+			else
+				System.out.println("no");
+		}
+		
+		//b.add("amahi");
+		//b.add("asunny");
+		//b.add("aayush");
+		
+		//Collections.copy(b,a);
+		//System.out.println(a+" "+b);
+		//Collections.shuffle(b);
+		
+		//Collections.reverse(b);
+//System.out.println(b);
+
+//List<String> sub_List = a.subList(0, 2);
+//System.out.println(sub_List);//
+//System.out.println(a);
+//Collections.swap(a, 0, 2);
+//System.out.println(a);
+		
+		
+	}
+
+}
